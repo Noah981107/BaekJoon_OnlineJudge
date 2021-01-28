@@ -23,5 +23,6 @@ public class Solve_1284 {
 			}
 			System.out.println(size);
 		}
+		sc.close();
 	}
 }
