@@ -1,0 +1,2 @@
+module bronze {
+}
