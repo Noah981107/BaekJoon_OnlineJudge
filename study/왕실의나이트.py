@@ -7,7 +7,7 @@ row = int(location[1])
 moves = [(-2,1), (-2,1), (2,1), (2,-1), (1,2), (-1,2), (-1,-2), (1, -2)]
 
 cnt = 0
-for move in moves :
+for move in moves : 
     nextCol = col + move[0]
     nextRow = row + move[1]
 
