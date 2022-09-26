@@ -15,8 +15,4 @@ public class Solve_15727 {
 
         System.out.println(answer);
     }
-
-    public static void solution() {
-
-    }
 }
