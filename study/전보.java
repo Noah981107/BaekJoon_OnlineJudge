@@ -42,7 +42,7 @@ public class Solution5 {
             Node node = pq.poll();
             int nodeIndex = node.index;
             int nodeTime = node.time;
-            
+
             if (timeTable[nodeIndex] < nodeTime)
                 continue;
 
@@ -64,7 +64,7 @@ public class Solution5 {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         C = Integer.parseInt(st.nextToken());
-        
+
         timeTable = new int[N + 1];
         Arrays.fill(timeTable, INF);
 
@@ -84,10 +84,9 @@ public class Solution5 {
         int count = 0;
         for (int i=1; i<=N; i++) {
 
-            if (timeTable[i] < INF && timeTable[i] > 0)
+            if (timeTable[i] < INF)
                 count++;
-
-            maxTime = Math.max(maxTime, timeTable[i]);
+                maxTime = Math.max(maxTime, timeTable[i]);
         }
 
         System.out.println(count + " " + maxTime);
